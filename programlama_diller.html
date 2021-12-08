@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/b120eb1be3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Who I Am</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-success" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-home fa-2x"></i>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myToggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myToggler">
+                <ul class="nav navbar-nav ms-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">Ben Kimim?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="programlama_diller.html" class="nav-link active">Çok Kullanılan Programlama Dilleri</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201221233157/Top-10-Programming-Languages-That-Will-Rule-in-2021.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/966/672/905/javascript-minimalism-wallpaper-preview.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/645/96/47/python-programming-programming-programming-language-code-hd-wallpaper-preview.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="accordion mt-4 rounded" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h5> <b>1-</b> Python</h5>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p> Son yıllarda oldukça popüler bir yere sahip olan <b>Python</b> , kolay öğrenilen bir dil
+                                olup uygulama yelpazesinin geniş olmasıyla beraber tercih edilen programlama dillerinde
+                                üst sıralara yükselmiştir. Neredeyse bütün Linux geliştiricileri tarafından
+                                kullanılmakta olup yeni başlayan katılımcılar için ideal ve hayal gücünü test
+                                edebileceği bir yere sahiptir.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h5> <b>2-</b> JavaScript</h5>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p> <b>JavaScript</b> web bazlı bir programlama dili olup son yıllarda oldukça yaygın
+                                kullanılmaya başlanmıştır. Çeşitli animasyonlar, kullanım kolaylıkları gibi göze hitap
+                                eden konularda kullanılan JavaScript kullanımı sonucu oldukça iyi sonuçlar
+                                çıkartabilirsiniz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h5><b>3-</b> Java</h5>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Günümüzde mobil sektörünün devlerinden birisi olan Java, çok yaygın bir kullanım
+                                yelpazesine sahip olup yıllarca popülaritesini yüksek seviyelerde tutmuş bir programlama
+                                dilidir. Windows, Linux ve Mac platformlarında rahatça kodlayabileceğiniz Java’nın
+                                günümüzde bilinen en iyi projelerinden birisi Minecraft isimli oyundur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <h5><b>4-</b> C++</h5>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            C++ programlama dili ile oyun, elektronik devre ve bilgisayar programları
+                            kodlanabilmektedir. Oldukça zor olan bu dil ile hayal gücünüzün aldığı hemen her şeyi
+                            yapabilirsiniz.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <h5><b>5-</b> C#</h5>
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <b>C#</b> <i> ("C sharp" olarak telaffuz edilmektedir) </i> bu yıl sıklıkla talep edilen bir
+                            programlama
+                            dili olup Microsoft tarafından tasarlanarak Microsoft.NET platformu üzerinden devam
+                            ettirilen obje yönlü bir dildir ve Microsoft’un diğer programlama dillerinden daha hızlı ve
+                            daha kolay program geliştirilebilmektedir. Kasım ayında yeni versiyonu olan C# 7.2 piyasaya
+                            sürüldüğünde gereksiz kopyalamadan kaçınmak için birkaç yeni karakter eklenmiştir. C#, C++
+                            gibi video oyunu geliştirmek için kullanılır ve video oyunu geliştirmek isteyenler bu iki
+                            dili rahatlıkla kullanabilir.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <h5> <b>6-</b> PHP</h5>
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <b>PHP</b> , mantıksal olarak kolayca uygulanabilen bir programlama dilidir. Forumlarda,
+                            bloglarda,
+                            e-ticaret sitelerinde ve günümüz internetinin çoğunda kullanılan bu dilin en bilindik
+                            kullanım örneği Facebook’tur.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            <h5><b>7-</b> TypeScript</h5>
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Özgür ve açık kaynaklı bir programlama dili olan TypeScript’in geliştiriciliğini ve
+                            desteklenmesini Microsoft üstleniyor. Bünyesinde barındırdığı derleyici sayesinde yazılan
+                            kodu JavaScript koduna çeviren bu dil, ilk kez 2012 yılında piyasaya sürüldü ve büyümesine
+                            hızla devam ediyor.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            <h5><b>8-</b> Shell</h5>
+                        </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Özellikle bilişim teknolojileri departmanlarında oldukça popüler olan <b>Shell</b> , işletim
+                            sisteminin doğal komutlarını doğrudan yerine getirmesini sağlıyor. Bu noktada <b>Shell</b>,
+                            uzaktan
+                            programları yüklemek veya kaldırmak gibi genel işlemleri otomatikleştirmek ve dosyaları
+                            yönetmek, yedeklemek ve kopyalamak için kullanılabilir.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingNine">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            <h5><b>9-</b> C</h5>
+                        </button>
+                    </h2>
+                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            1972'de Dennis Ritchie tarafından geliştirilen <b>C</b> , günümüzde hala kullanılan en eski
+                            programlama dillerinden biri. Bu dil, çok çeşitli bilgisayar sistemleri ve donanımlarını
+                            programlamak için genel amaçlı bir dil olarak tasarlanmıştı. Aynı zamanda Java, PHP ve
+                            JavaScript dahil olmak üzere birçok popüler dilin kökleri de C’ye dayanıyor.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTen">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                            <h5><b>10-</b> Ruby</h5>
+                        </button>
+                    </h2>
+                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <b>Ruby</b> , kullanımı basit tutmaya odaklanan açık kaynaklı bir programlama dilidir.
+                            Yukihiro
+                            Matsumoto tarafından Japonya'da tasarlanmaya ve geliştirilmeye başlanan bu programlama dili,
+                            günümüzden neredeyse çeyrek asır önce 1995 yılında piyasaya sürüldü. O zamanlardan beri
+                            popülerliğini koruyan Ruby, listenin 10. sırasında yer alıyor.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
