@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/b120eb1be3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact-form.css">
+    <title>İletişim</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-success" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-home fa-2x"></i>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myToggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myToggler">
+                <ul class="nav navbar-nav ms-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ben Kimim?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="programlama_diller.html" class="nav-link">Çok Kullanılan Programlama Dilleri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html"><i class="fas fa-home"></i></a></li>
+                    <li class="breadcrumb-item"><a href="./programlama_diller.html">Çok Kullanılan Programlama Dilleri</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><i class="fas fa-map-pin"></i> İletişim</li>
+
+                </ol>
+            </nav>
+            <div class="form-box">
+                <h1>İletişim Formu</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="name">İsim</label>
+                        <input class="form-control" id="name" type="text" name="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control" id="email" type="email" name="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mesaj</label>
+                        <textarea class="form-control" id="message" name="Message" style="max-height: 400px;"></textarea>
+                    </div>
+                    <input class="btn btn-success bg-success mt-3" type="submit" value="Submit">
+                </form>
+
+                <hr>
+                <h1 class="mt-4">Konum Bilgilendirmesi</h1>
+                <div class="map-form">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1511.3656257145576!2d30.344998936940872!3d40.74593874065542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccb277ad926e99%3A0x518281b5101323d1!2sKemalpa%C5%9Fa%2C%20%C3%9Cniversite%20Cd.%2C%2054050%20Serdivan%2FSakarya!5e0!3m2!1str!2str!4v1639333093656!5m2!1str!2str"
+                        width="400"  height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

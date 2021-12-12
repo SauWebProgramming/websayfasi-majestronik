@@ -3,7 +3,6 @@ body {
     background: #ddd;
 }
 
-
 main {
     padding: 80px 0;
 }
@@ -69,4 +68,13 @@ main {
 .card:hover {
     border-color: green;
     transition: .7s;
+}
+.breadcrumb{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.breadcrumb a{
+    text-decoration: none;
+    color: #06a058;
 }
