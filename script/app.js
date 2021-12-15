@@ -21,13 +21,11 @@ Quiz.prototype.getQuestion = function () {
 
 Quiz.prototype.checkResult = function (answer) {
     var question = this.getQuestion();
+    console.log(question.checkAnswer(answer), answer);
     if (question.checkAnswer(answer)) {
         this.score++;
     }
-    console.log(answer);
-    if(answer){
-        this.questionIndex++;
-    }
+    this.questionIndex++;
 }
 
 Quiz.prototype.isFinish = function () {
@@ -37,7 +35,6 @@ Quiz.prototype.isFinish = function () {
 function loadQuestions() {
     if (quiz.isFinish()) {
         showScore();
-        
     }
     else{
         var question = quiz.getQuestion();
@@ -49,7 +46,7 @@ function loadQuestions() {
             var element = document.querySelector(`#r${i}`);
             element.textContent = choices[i];
         }
-        guess(myAnswer());
+        guess();
         showProgress();
     }
 }
@@ -61,15 +58,16 @@ function showScore() {
     document.querySelector('.card-footer').innerHTML = "";
 }
 
-function guess(guess) {
+function guess() {
     var btn = document.getElementById('nextBtn');
     btn.onclick = function () {
         if(quiz.isFinish()){
-            console.log("hello")
             location.href = 'index.html';
         }
-        quiz.checkResult(guess);
-        loadQuestions();
+        else{
+            quiz.checkResult(myAnswer());
+            loadQuestions();
+        }
     }
 }
 
@@ -77,8 +75,7 @@ function myAnswer() {
     var radios = document.getElementsByTagName('input');
     for (var i = 0; i < radios.length; i++) {
         if (radios[i].type === 'radio' && radios[i].checked) {
-            console.log(document.querySelector(`#r${i}`).innerHTML);
-            return document.querySelector(`#r${i}`).innerHTML;
+            return document.querySelector(`#r${i}`).textContent;
         }
     }
     alert('Lütfen boş birakmayiniz.');
